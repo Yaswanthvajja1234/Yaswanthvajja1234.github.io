@@ -9,21 +9,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loader">
+            <div class="cyber-text">Hi, Vajja Yaswanth Pavan Kumar</div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" id="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <span class="logo-text">YPK</span>
             </div>
-            <ul class="nav-menu">
+            <ul class="nav-menu" id="navMenu">
                 <li><a href="#home" class="nav-link">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
                 <li><a href="#skills" class="nav-link">Skills</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
                 <li><a href="#certifications" class="nav-link">Certifications</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-            <div class="hamburger">
+            <div class="hamburger" id="hamburger">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -33,102 +43,65 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <div class="greeting">
-                    <h1 class="greeting-text">Hi, <span class="name-highlight">Vajja Yaswanth Pavan Kumar</span></h1>
-                    <div class="typing-container">
-                        <span class="typing-text"></span>
-                        <span class="cursor">|</span>
-                    </div>
-                </div>
-                <p class="hero-description">Cybersecurity enthusiast and Full Stack Developer passionate about creating secure and innovative web solutions</p>
+        <div class="hero-background">
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+            </div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-name">
+                    <span class="greeting">Hi, I'm</span>
+                    <span class="name-highlight">Vajja Yaswanth Pavan Kumar</span>
+                </h1>
+                <h2 class="hero-title">Cybersecurity Enthusiast & Developer</h2>
+                <p class="hero-description">B.Tech CSE - Cyber Security student passionate about ethical hacking, web development, and digital forensics.</p>
                 <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
                     <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-                </div>
-                <div class="social-links">
-                    <a href="https://github.com/Yaswanthvajja1234" target="_blank" class="social-link">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="http://www.linkedin.com/in/yashunani1" target="_blank" class="social-link">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="https://leetcode.com/u/Yaswanthvajja_2004/" target="_blank" class="social-link">
-                        <i class="fas fa-code"></i>
-                    </a>
                 </div>
             </div>
             <div class="hero-image">
                 <div class="profile-card">
-                    <div class="card-glow"></div>
-                    <div class="profile-content">
-                        <div class="profile-avatar">
-                            <i class="fas fa-user-shield"></i>
-                        </div>
-                        <div class="floating-elements">
-                            <div class="floating-icon" style="--delay: 0s;"><i class="fas fa-lock"></i></div>
-                            <div class="floating-icon" style="--delay: 1s;"><i class="fas fa-code"></i></div>
-                            <div class="floating-icon" style="--delay: 2s;"><i class="fas fa-shield-alt"></i></div>
-                            <div class="floating-icon" style="--delay: 3s;"><i class="fas fa-laptop-code"></i></div>
-                        </div>
+                    <div class="profile-avatar">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <div class="profile-info">
+                        <h3>Cyber Security Specialist</h3>
+                        <p>Ethical Hacker | Developer</p>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="scroll-indicator">
-            <div class="scroll-arrow"></div>
         </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">About Me</h2>
-                <div class="section-subtitle">Get to know more about my journey</div>
-            </div>
+            <h2 class="section-title">About Me</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <div class="about-card">
-                        <h3>Education & Background</h3>
-                        <div class="education-item">
-                            <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
-                            <div class="edu-content">
-                                <h4>B.Tech - CSE - Cyber Security</h4>
-                                <p>Parul Institute of Engineering and Technology</p>
-                                <span class="year">2022 - 2026 | CGPA: 7.09/10</span>
-                            </div>
-                        </div>
-                        <div class="education-item">
-                            <div class="edu-icon"><i class="fas fa-school"></i></div>
-                            <div class="edu-content">
-                                <h4>12th Grade</h4>
-                                <p>Oxford Vit, Narasaraopet</p>
-                                <span class="year">2022 | 70.20%</span>
-                            </div>
-                        </div>
-                        <div class="education-item">
-                            <div class="edu-icon"><i class="fas fa-school"></i></div>
-                            <div class="edu-content">
-                                <h4>10th Grade</h4>
-                                <p>Guntur Oxford, Narasaraopet</p>
-                                <span class="year">2020 | 99%</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-info">
-                    <div class="info-card">
-                        <h3>Personal Details</h3>
+                    <p>I'm a passionate B.Tech student specializing in Computer Science Engineering with a focus on Cyber Security. Currently pursuing my degree at Parul University with a CGPA of 7.09/10.</p>
+                    <div class="personal-info">
                         <div class="info-grid">
                             <div class="info-item">
-                                <i class="fas fa-calendar-alt"></i>
-                                <span>Born: August 24, 2004</span>
+                                <i class="fas fa-birthday-cake"></i>
+                                <span>24 Aug, 2004</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-phone"></i>
+                                <span>+91-9966990848</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>yaswanthvajja93@gmail.com</span>
                             </div>
                             <div class="info-item">
                                 <i class="fas fa-map-marker-alt"></i>
-                                <span>Vadodara, Gujarat</span>
+                                <span>Vadodara, Gujarat, India</span>
                             </div>
                             <div class="info-item">
                                 <i class="fas fa-language"></i>
@@ -145,44 +118,79 @@
         </div>
     </section>
 
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2022 - 2026</div>
+                    <div class="timeline-content">
+                        <h3>B.Tech - CSE - Cyber Security</h3>
+                        <h4>Parul University - PIET</h4>
+                        <p>CGPA: 7.09 / 10</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2022</div>
+                    <div class="timeline-content">
+                        <h3>Intermediate (12th)</h3>
+                        <h4>Oxford Vit, Narasaraopet</h4>
+                        <p>BIEAP | Percentage: 70.20 / 100</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2020</div>
+                    <div class="timeline-content">
+                        <h3>Secondary (10th)</h3>
+                        <h4>Guntur Oxford, Narasaraopet</h4>
+                        <p>BSEAP | Percentage: 99 / 100</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Skills Section -->
     <section id="skills" class="skills">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Technical Skills</h2>
-                <div class="section-subtitle">Technologies and tools I work with</div>
-            </div>
+            <h2 class="section-title">Key Expertise</h2>
             <div class="skills-grid">
                 <div class="skill-category">
-                    <h3><i class="fas fa-code"></i> Programming & Web</h3>
+                    <h3>Web Technologies</h3>
                     <div class="skill-items">
-                        <div class="skill-item">HTML</div>
-                        <div class="skill-item">CSS</div>
-                        <div class="skill-item">JavaScript</div>
-                        <div class="skill-item">ReactJS</div>
-                        <div class="skill-item">Bootstrap</div>
-                        <div class="skill-item">Spring Boot</div>
-                        <div class="skill-item">Java</div>
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">ReactJS</span>
+                        <span class="skill-tag">Bootstrap</span>
+                        <span class="skill-tag">Spring Boot</span>
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3><i class="fas fa-database"></i> Database & Systems</h3>
+                    <h3>Cybersecurity</h3>
                     <div class="skill-items">
-                        <div class="skill-item">MongoDB</div>
-                        <div class="skill-item">SQL</div>
-                        <div class="skill-item">DBMS</div>
-                        <div class="skill-item">Data Structures</div>
-                        <div class="skill-item">Operating Systems</div>
+                        <span class="skill-tag">Ethical Hacking</span>
+                        <span class="skill-tag">SQL Injection</span>
+                        <span class="skill-tag">Digital Forensics</span>
+                        <span class="skill-tag">Networking</span>
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3><i class="fas fa-shield-alt"></i> Cybersecurity</h3>
+                    <h3>Database & Systems</h3>
                     <div class="skill-items">
-                        <div class="skill-item">Ethical Hacking</div>
-                        <div class="skill-item">SQL Injection</div>
-                        <div class="skill-item">Digital Forensics</div>
-                        <div class="skill-item">Network Security</div>
-                        <div class="skill-item">Networking</div>
+                        <span class="skill-tag">DBMS</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">Operating Systems</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Programming</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">Data Structures</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">Algorithm Design</span>
                     </div>
                 </div>
             </div>
@@ -192,70 +200,77 @@
     <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">My Projects</h2>
-                <div class="section-subtitle">Some of my recent work</div>
-            </div>
+            <h2 class="section-title">Projects</h2>
             <div class="projects-grid">
                 <div class="project-card">
-                    <div class="project-icon"><i class="fas fa-store"></i></div>
-                    <h3>Book Store App</h3>
-                    <p>Full-stack application for managing book inventory and sales</p>
-                    <div class="project-tech">
-                        <span>React</span>
-                        <span>MongoDB</span>
-                        <span>Node.js</span>
+                    <div class="project-icon">
+                        <i class="fas fa-gamepad"></i>
                     </div>
+                    <h3>TIC TAC TOE</h3>
+                    <p>Interactive game built with JavaScript</p>
                 </div>
                 <div class="project-card">
-                    <div class="project-icon"><i class="fas fa-users"></i></div>
-                    <h3>Student Management App</h3>
-                    <p>Comprehensive system for managing student data and records</p>
-                    <div class="project-tech">
-                        <span>Java</span>
-                        <span>Spring Boot</span>
-                        <span>SQL</span>
+                    <div class="project-icon">
+                        <i class="fas fa-calculator"></i>
                     </div>
+                    <h3>Calculator Project</h3>
+                    <p>Responsive calculator application</p>
                 </div>
                 <div class="project-card">
-                    <div class="project-icon"><i class="fas fa-poll"></i></div>
-                    <h3>Online Polling System</h3>
-                    <p>Real-time voting platform with secure authentication</p>
-                    <div class="project-tech">
-                        <span>JavaScript</span>
-                        <span>HTML/CSS</span>
-                        <span>Database</span>
+                    <div class="project-icon">
+                        <i class="fas fa-cloud-sun"></i>
                     </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-icon"><i class="fas fa-cloud-sun"></i></div>
                     <h3>Weather Dashboard</h3>
-                    <p>Interactive weather application with location-based forecasts</p>
-                    <div class="project-tech">
-                        <span>JavaScript</span>
-                        <span>API Integration</span>
-                        <span>CSS</span>
-                    </div>
+                    <p>Real-time weather tracking app</p>
                 </div>
                 <div class="project-card">
-                    <div class="project-icon"><i class="fas fa-gamepad"></i></div>
+                    <div class="project-icon">
+                        <i class="fas fa-drum"></i>
+                    </div>
+                    <h3>Drumshell</h3>
+                    <p>Virtual drum kit application</p>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-puzzle-piece"></i>
+                    </div>
                     <h3>Simon Game</h3>
-                    <p>Classic memory game built with vanilla JavaScript</p>
-                    <div class="project-tech">
-                        <span>JavaScript</span>
-                        <span>HTML</span>
-                        <span>CSS</span>
-                    </div>
+                    <p>Memory pattern game</p>
                 </div>
                 <div class="project-card">
-                    <div class="project-icon"><i class="fas fa-question-circle"></i></div>
-                    <h3>Quiz Game</h3>
-                    <p>Interactive quiz application with multiple categories</p>
-                    <div class="project-tech">
-                        <span>JavaScript</span>
-                        <span>Bootstrap</span>
-                        <span>JSON</span>
+                    <div class="project-icon">
+                        <i class="fas fa-question-circle"></i>
                     </div>
+                    <h3>Quiz Game</h3>
+                    <p>Interactive quiz application</p>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-poll"></i>
+                    </div>
+                    <h3>Online Polling System</h3>
+                    <p>Web-based voting platform</p>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Student Management App</h3>
+                    <p>Complete student information system</p>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>Book Store App</h3>
+                    <p>E-commerce book store platform</p>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3>Beautiful Flowers</h3>
+                    <p>Flower ordering website</p>
                 </div>
             </div>
         </div>
@@ -264,34 +279,48 @@
     <!-- Certifications Section -->
     <section id="certifications" class="certifications">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Certifications & Training</h2>
-                <div class="section-subtitle">Professional development and achievements</div>
-            </div>
+            <h2 class="section-title">Certifications & Training</h2>
             <div class="cert-grid">
                 <div class="cert-card">
-                    <div class="cert-icon"><i class="fas fa-user-secret"></i></div>
+                    <i class="fas fa-shield-alt"></i>
                     <h3>Ethical Hacking</h3>
                 </div>
                 <div class="cert-card">
-                    <div class="cert-icon"><i class="fas fa-database"></i></div>
+                    <i class="fas fa-database"></i>
                     <h3>SQL Injection Attacks</h3>
                 </div>
                 <div class="cert-card">
-                    <div class="cert-icon"><i class="fas fa-shield-alt"></i></div>
+                    <i class="fas fa-network-wired"></i>
                     <h3>Network Defence Essentials</h3>
                 </div>
                 <div class="cert-card">
-                    <div class="cert-icon"><i class="fas fa-search"></i></div>
-                    <h3>Digital Forensics</h3>
+                    <i class="fas fa-search"></i>
+                    <h3>Digital Forensic</h3>
                 </div>
                 <div class="cert-card">
-                    <div class="cert-icon"><i class="fab fa-aws"></i></div>
-                    <h3>AWS</h3>
+                    <i class="fas fa-bug"></i>
+                    <h3>Bug Bounty Hunt</h3>
                 </div>
                 <div class="cert-card">
-                    <div class="cert-icon"><i class="fas fa-network-wired"></i></div>
-                    <h3>Cisco Networking</h3>
+                    <i class="fab fa-aws"></i>
+                    <h3>AWS Certification</h3>
+                </div>
+            </div>
+            
+            <div class="workshops">
+                <h3>Recent Workshops</h3>
+                <div class="workshop-item">
+                    <div class="workshop-date">20-21 Dec, 2024</div>
+                    <div class="workshop-content">
+                        <h4>JavaScript Unleashed - Building Dynamic Web Applications</h4>
+                        <p>Parul Institute of Engineering and Technology</p>
+                    </div>
+                </div>
+                <div class="workshop-item">
+                    <div class="workshop-content">
+                        <h4>Full Stack Web Development</h4>
+                        <p>Parul Institute of Computer Application</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -300,64 +329,79 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Get In Touch</h2>
-                <div class="section-subtitle">Let's connect and collaborate</div>
-            </div>
+            <h2 class="section-title">Get In Touch</h2>
             <div class="contact-content">
                 <div class="contact-info">
                     <div class="contact-item">
-                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
-                        <div class="contact-details">
+                        <i class="fas fa-envelope"></i>
+                        <div>
                             <h4>Email</h4>
                             <p>yaswanthvajja93@gmail.com</p>
                         </div>
                     </div>
                     <div class="contact-item">
-                        <div class="contact-icon"><i class="fas fa-phone"></i></div>
-                        <div class="contact-details">
+                        <i class="fas fa-phone"></i>
+                        <div>
                             <h4>Phone</h4>
                             <p>+91-9966990848</p>
                         </div>
                     </div>
                     <div class="contact-item">
-                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
-                        <div class="contact-details">
-                            <h4>Location</h4>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Address</h4>
                             <p>Parul University, Vadodara</p>
                             <p>Gujarat, India - 391760</p>
                         </div>
                     </div>
                 </div>
-                <div class="contact-form">
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
+                <div class="social-links">
+                    <a href="http://www.linkedin.com/in/yashunani1" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/Yaswanthvajja1234" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://leetcode.com/u/Yaswanthvajja_2004/" target="_blank">
+                        <i class="fas fa-code"></i>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <p>&copy; 2025 Vajja Yaswanth Pavan Kumar. All rights reserved.</p>
-                <div class="footer-links">
-                    <a href="https://github.com/Yaswanthvajja1234" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="http://www.linkedin.com/in/yashunani1" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://leetcode.com/u/Yaswanthvajja_2004/" target="_blank"><i class="fas fa-code"></i></a>
+                    <h3 style="margin-bottom: 1.5rem; color: var(--primary-color);">Send Message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                    <div class="success-message" id="successMessage">
+                        <i class="fas fa-check-circle"></i>
+                        Thank you! Your message has been sent successfully.
+                    </div>
                 </div>
             </div>
+<!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Vajja Yaswanth Pavan Kumar. All rights reserved.</p>
         </div>
     </footer>
 
