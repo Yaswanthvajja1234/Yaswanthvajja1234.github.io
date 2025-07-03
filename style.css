@@ -42,7 +42,17 @@ body {
     margin: 0 auto;
     padding: 0 20px;
 }
-
+/* .download-btn, .view-btn {
+  background-color: #00d5ff; 
+  color: white;
+  font-weight: bold;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 9999px;          
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+} */
 /* Loading Screen */
 .loading-screen {
     position: fixed;
@@ -311,7 +321,7 @@ body {
     animation: fadeInUp 1s ease-out 1s both;
 }
 
-.btn {
+.btn, .download-btn {
     padding: 12px 30px;
     border: none;
     border-radius: 50px;
@@ -324,7 +334,7 @@ body {
     overflow: hidden;
 }
 
-.btn-primary {
+.btn-primary, .download-btn {
     background: var(--gradient-3);
     color: white;
 }
@@ -335,7 +345,7 @@ body {
     color: var(--primary-color);
 }
 
-.btn:hover {
+.btn:hover, .download-btn:hover {
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(0, 212, 255, 0.3);
 }
